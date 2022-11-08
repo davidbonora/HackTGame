@@ -13,6 +13,10 @@ root {
     --teal: #20c997;
     --cyan: #0dcaf0;
     --dark: #292a2b;
+    min-height: 100vh;
+    position: relative;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 
 *,
@@ -36,32 +40,42 @@ root {
 @media (min-width:1025px) {
     /*big landscape tablets, laptops, and desktops */
 }
+@media (min-width:1930px) {
+}
 
-/* --lightgrey: ; */
 
-.pie-pag {
+.footerpie-pag {
     width: 100%;
     background-color: #292a2b;
     flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    
 }
 
-.box {
+.footerdiv {
     width: 100%;
     max-width: 1200px;
     padding: 7px 0px;
     color: white;
     font-family: 'Titillium Web', sans-serif;
+    position: relative;
+    margin-top: auto;
 }
 
-.last {
+.footerlast {
     font-family: 'Poppins', sans-serif;
     justify-content: center;
     align-items: center;
     display: flex;
     justify-content: center;
+    position: relative;
+    
 }
-.h2 {
+.footerh2 {
  display:flex;
  justify-content: center;
  align-items: center;
+ position: relative;
+ 
 }
