@@ -1,12 +1,7 @@
-*{
-    padding: 0;
-    border: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
 :root {
-    font-size: .785rem;
+    box-sizing: border-box;
+    font-size: 0.875rem;
+    font-family: "Rubik", sans-serif;
     --blue: #0d6efd;
     --indigo: #6610f2;
     --purple: #6f42c1;
@@ -17,10 +12,55 @@
     --green: #198754;
     --teal: #20c997;
     --cyan: #0dcaf0;
-    --black: #000;
-    /* color: #fff; */
-  }
+    --dark: #292a2b;
+    --lightgrey: #736f73;
+}
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: inherit;
+    outline: 0 none;
+}
 
-@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ }
-@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
-@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+/*-- Principio David --*/
+.player-btn {
+    border-radius: 100%;
+    width:auto;
+    height: auto;
+    background-color: transparent;
+}
+
+.fa-stack        .fa { color: black; }
+.fa-stack        .fa.fa-circle-thin { color: black; }
+.fa-stack        .fa.fa-circle { opacity:0.0; color:black; }
+
+.fa-stack:hover  .fa.fa-user-plus { color: white; }
+.fa-stack:hover  .fa.fa-circle-thin { color: black; }
+.fa-stack:hover  .fa.fa-circle { opacity:1.0 }
+
+.hide-hvr {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 9999s, opacity 0.1s linear;
+}
+
+.show-hvr {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s 9999s, opacity 0.1s linear;
+}
+
+/*-- Final David --*/
+
+@media (min-width: 320px) {
+    /* smartphones, iPhone, portrait 480x320 phones */
+}
+@media (min-width: 641px) {
+    /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+}
+@media (min-width: 1025px) {
+    /* big landscape tablets, laptops, and desktops */
+}
