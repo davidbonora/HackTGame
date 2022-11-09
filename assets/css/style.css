@@ -16,7 +16,6 @@ font-family: 'Titillium Web', sans-serif; */
   --dark: #292a2b;
   --lightgrey: #736f73;
   margin-left: 10em;
-  
 }
 .ELbody section {
   /* width: 1440px; */
@@ -117,26 +116,34 @@ font-family: 'Titillium Web', sans-serif; */
   top: 20px;
   left: 10px;
   top: 100%;
-  left: 65%;
+  left: 69%;
   transform: translate(50%, 50%);
 }
 
-
-
-
- 
- @media (min-width: 320px) { 
- /* smartphones, iPhone, portrait 480x320 phones   */
- .ELbody p {
-  font-size: 0.975rem;
-  width: 100%;
- }
- .ELbody h1{
-  font-size: 3em;
-  margin: 0;
- }
- }
-
-/* @media (min-width:641px)  { / portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones / }
-@media (min-width:1025px) { / big landscape tablets, laptops, and desktops } */
- 
+@media (min-width: 320px) {
+  /* smartphones, iPhone, portrait 480x320 phones  */
+  .ELbody h1 {
+    font-size: 2.5em;
+  }
+  .ELbody p {
+    font-size: 0.875rem;
+  }
+  .ELbody #our-team {
+    display: flexbox;
+  }
+  .ELbody img {
+    
+  }
+}
+@media (min-width: 641px) {
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones  */
+  .ELbody #our-team {
+    display: flex;
+  }
+}
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops  */
+  .ELbody #our-team {
+    display: flex;
+  }
+}
