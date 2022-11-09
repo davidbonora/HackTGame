@@ -38,7 +38,7 @@ root {
 }
 
 @media (min-width: 1440px) {
-    
+
 }
 
 .footerpie-pag {
@@ -52,7 +52,7 @@ root {
 
 .footerdiv {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1440px;
     padding: 7px 0px;
     color: white;
     font-family: 'Titillium Web', sans-serif;
