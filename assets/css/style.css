@@ -26,19 +26,22 @@ root {
 }
 
 @media (min-width:320px) {
+    font-size: ;
     /*smartphones, iPhone, portrait 480x320 phones */
 }
 
 @media (min-width:641px) {
+    font-size: ;
     /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones  */
 }
 
 @media (min-width:1025px) {
+    font-size: ;
     /*big landscape tablets, laptops, and desktops */
 }
 
 @media (min-width: 1440px) {
-
+    font-size: ;
 }
 
 .footerpie-pag {
@@ -47,7 +50,7 @@ root {
     flex-direction: column;
     position: absolute;
     bottom: 0;
-    
+
 }
 
 .footerdiv {
@@ -67,11 +70,20 @@ root {
     display: flex;
     justify-content: center;
     position: relative;
-    
+
 }
+
 .footerh2 {
- display:flex;
- justify-content: center;
- align-items: center;
- position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.yll {
+    color: #ffc311;
+}
+
+.wht {
+    color: white;
 }
