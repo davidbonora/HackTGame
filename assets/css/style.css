@@ -115,10 +115,10 @@
     margin: 0 25%;
   }
   #ourGames h1{
-font-size: 80px;
+font-size: 30px;
   }
   #ourGames p{
-font-size: 30px;
+font-size: 12px;
   }
   #ourGames .card {
     display: flex;
@@ -137,13 +137,13 @@ font-size: 30px;
     margin-top: -1px;
   }
   #ourGames .card-text h1 {
-    font-size: 40px;
+    font-size: 20px;
   }
   #ourGames .card-text i {
-    font-size: 20px;
+    font-size: 10px;
   }
   #ourGames .card-text a {
-    font-size: 20px;
+    font-size: 10px;
   }
 
 }
