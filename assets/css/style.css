@@ -36,13 +36,10 @@ root {
 @media (min-width:1025px) {
     /*big landscape tablets, laptops, and desktops */
 }
-@media (min-width:1930px) {
-}
-@media (min-width: 1420px) {
-}
-@media (min-width: 1800px) {
-}
 
+@media (min-width: 1440px) {
+    
+}
 
 .footerpie-pag {
     width: 100%;
@@ -77,5 +74,4 @@ root {
  justify-content: center;
  align-items: center;
  position: relative;
- 
 }
