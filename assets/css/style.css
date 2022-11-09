@@ -1,0 +1,170 @@
+/* @media (min-width: 320px) {
+   smartphones, iPhone, portrait 480x320 phones }
+@media (min-width:641px)  {  portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones / } */
+@media (min-width: 1025px) {
+}
+:root {
+  font-size: 0.875rem;
+  font-family: "Poppins", sans-serif;
+  --blue: #0d6efd;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #d63384;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #198754;
+  --teal: #20c997;
+  --cyan: #0dcaf0;
+  --dark: #292a2b;
+  --black: #000;
+  --white: #fff;
+  --yellowHack: #ffc311;
+  --grey: #929292;
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: inherit;
+  outline: 0 none;
+}
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  padding: 10px 15px 10px 15px;
+  position: relative;
+  z-index: 1;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-family: "Titillium Web", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+header {
+  width: 100%;
+}
+.header-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.header-h1 {
+  font-size: 1.8rem;
+  font-family: "Titillium Web", sans-serif;
+  padding-top: 35px;
+  padding-left: 70px;
+}
+.header-white {
+  color: #fffefa;
+}
+.header-yellow {
+  color: #ffc311;
+}
+.header-burger {
+  text-align: right;
+}
+.header-logo,
+.header-menu {
+  width: 50%;
+}
+.header-line1 {
+  display: flex;
+}
+.header-nav1 {
+  text-align: center;
+}
+.header-nav1 a {
+  color: #fffefa;
+  transition: all 0.3s ease;
+  margin: 6px;
+}
+.header-nav1 a:hover {
+  color: #ffc311;
+}
+.header-buttons {
+  background-color: #ffc311;
+  text-align: right;
+  font-family: "Poppins", sans-serif;
+  width: 12rem;
+  line-height: 1.25;
+  padding: 0;
+  margin: 0;
+  padding-right: 20px;
+  border: 1px solid #ffc107;
+  border-radius: 1.2rem;
+  border-color: #ffc107;
+  font-size: 14px;
+  font-weight: bolder;
+}
+.header-login {
+  color: var(--dark);
+}
+.header-signup {
+  color: white;
+}
+.header-nav2 {
+  color: #fffefa;
+  text-align: left;
+}
+.header-nav2 a {
+  color: #fffefa;
+  transition: all 0.3s ease;
+  margin: 6px;
+}
+.header-nav2 a:hover {
+  color: #ffc311;
+}
+.header-h2 {
+  font-family: "Titillium Web", sans-serif;
+  text-align: center;
+  font-size: 3rem;
+}
+.header-p {
+  text-align: center;
+  font-size: 1rem;
+  color: #fffefa;
+  font-family: "Poppins", sans-serif;
+}
+.header-h2-p {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("../../Teamwork3/img/slider/1.jpg");
+}
+#slider1 {
+  position: relative;
+  z-index: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+#header-btn {
+  border: #fffefa solid 1px;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  z-index: 1;
+  align-content: center;
+}
+#header-btn button:hover{
+  background-color: #fffefa;
+  transition: all 0.3s ease;
+  margin: 20px;
+}
