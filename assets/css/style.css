@@ -111,7 +111,8 @@
 @media (min-width: 1025px) {
   /* big landscape tablets, laptops, and desktops */
   #ourGames {
-    margin:0 20rem;
+    max-width: 1440px;
+    margin: 0 25%;
   }
   #ourGames h1{
 font-size: 80px;
