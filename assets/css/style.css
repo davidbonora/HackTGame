@@ -26,12 +26,25 @@
 body {
   align-items: center;
   display: flex;
+  flex-direction: column;
 }
 
 img {
   width: 400px;
   height: auto;
   margin: 0 auto;
+}
+
+.btn{
+  border-radius: 50%;
+  border: 1px solid black;
+  margin: 30px;
+  padding: 1.5rem;
+  background-color: transparent;
+}
+
+.solidBtn {
+  background-color: black;
 }
 
 @media (min-width: 320px) {
