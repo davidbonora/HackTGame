@@ -1,7 +1,6 @@
 :root {
     box-sizing: border-box;
     font-size: 0.875rem;
-    font-family: "Rubik", sans-serif;
     --blue: #0d6efd;
     --indigo: #6610f2;
     --purple: #6f42c1;
@@ -26,31 +25,51 @@
 }
 
 /*-- Principio David --*/
-.player-btn {
-    border-radius: 100%;
-    width:auto;
-    height: auto;
+
+#our-team {
+    width: 100vw;
+    display: flex;
+    margin: 2em 2em auto;
+}
+
+#our-team img.player-img {
+    display: block;
+    position: relative;
+    max-width: 80%;
+}
+
+.player-btn { 
+    position: absolute;
+    align-items: center;
     background-color: transparent;
 }
 
-.fa-stack        .fa { color: black; }
-.fa-stack        .fa.fa-circle-thin { color: black; }
-.fa-stack        .fa.fa-circle { opacity:0.0; color:black; }
+.fa-stack .fa {
+    color: black;
+}
+.fa-stack .fa.fa-circle {
+    color: white;
+}
 
-.fa-stack:hover  .fa.fa-user-plus { color: white; }
-.fa-stack:hover  .fa.fa-circle-thin { color: black; }
-.fa-stack:hover  .fa.fa-circle { opacity:1.0 }
+.fa-stack:hover .fa.fa-circle {
+    color: var(--yellow);
+}
+
+.player-name {
+    z-index: 2;
+    position: absolute;
+}
 
 .hide-hvr {
     visibility: hidden;
     opacity: 0;
-    transition: visibility 0s 9999s, opacity 0.1s linear;
+    transition: visibility 0s 9999s, opacity 0.1s ease-in-out;
 }
 
 .show-hvr {
     visibility: visible;
     opacity: 1;
-    transition: visibility 0s 9999s, opacity 0.1s linear;
+    transition: visibility 0s 9999s, opacity 0.1s ease-in-out;
 }
 
 /*-- Final David --*/
