@@ -1,474 +1,489 @@
 :root {
-  box-sizing: border-box;
-  font-size: 0.875rem;
-  --blue: #0d6efd;
-  --indigo: #6610f2;
-  --purple: #6f42c1;
-  --pink: #d63384;
-  --red: #dc3545;
-  --orange: #fd7e14;
-  --yellow: #ffc311;
-  --green: #198754;
-  --teal: #20c997;
-  --cyan: #0dcaf0;
-  --dark: #292a2b;
-  --lightgrey: #736f73;
+    box-sizing: border-box;
+    font-size: 0.875rem;
+    --blue: #0d6efd;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #d63384;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc311;
+    --green: #198754;
+    --teal: #20c997;
+    --cyan: #0dcaf0;
+    --dark: #292a2b;
+    --lightgrey: #736f73;
 }
 *,
 ::before,
 ::after {
-  padding: 0;
-  margin: 0;
-  border: 0;
-  box-sizing: inherit;
-  outline: 0 none;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: inherit;
+    outline: 0 none;
 }
 
 .ELbody {
-  max-width: 1140px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 1em;
-  padding-bottom: 12%;
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1em;
 }
 .ELbody h1 {
-  font-family: "Titillium Web", sans-serif;
-  margin: 0;
-  font-size: 3.5rem;
+    font-family: "Titillium Web", sans-serif;
+    margin-left: 1rem;
+    font-size: 3.5rem;
 }
 .ELbody h1:nth-child(2) {
-  color: var(--yellow);
-  margin-top: -0.5em;
-  margin-bottom: -0.3em;
+    color: var(--yellow);
+    margin-top: -0.5em;
+    margin-bottom: -0.3em;
 }
 .ELbody p {
-  font-family: "Poppins", sans-serif;
-  color: var(--lightgrey);
-  font-size: 1.3rem;
-  margin-top: 5%;
-  margin-bottom: 10%;
+    font-family: "Poppins", sans-serif;
+    color: var(--lightgrey);
+    margin-top: 5%;
+    margin-left: 1.2rem;
+    margin-bottom: 10%;
 }
 
 #our-team {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding-bottom: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .playercontainer {
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-  color: #fff;
-  margin-bottom: 10%;
-  box-shadow: 0px 13px 27px -5px rgba(50, 50, 93, 0.25),
-    0px 8px 16px -8px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    margin: 2rem 0;
+    margin-bottom: 10%;
+    box-shadow: 0px 13px 27px -5px rgba(50, 50, 93, 0.25),
+        0px 8px 16px -8px rgba(0, 0, 0, 0.3);
 }
 
- .player-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
+.player-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 .player-anim {
-  position: absolute;
-  bottom: 100%;
-  width: 100%;
-  left: 0;
-  right: 0;
-  overflow: hidden;
-  height: 0;
-  background-color: rgba(0, 0, 0, 0.6);
-  transition: 0.5s ease;
+    position: absolute;
+    bottom: 100%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: 0.5s ease;
 }
 
 .player-btn {
-  position: absolute;
-  top: 50%;
-  width: 50%;
-  left: 25%;
-  z-index: 1;
-  text-align: center;
-  transition: 0.5s;
+    position: absolute;
+    top: 50%;
+    width: 50%;
+    left: 25%;
+    z-index: 1;
+    text-align: center;
+    transition: 0.5s;
 }
 .playercontainer:hover .player-anim {
-  height: 100%;
-  bottom: 0;
+    height: 100%;
+    bottom: 0;
 }
 .player-name-cont {
-  position: absolute;
-  left: 25%;
-  bottom: 5em;
-  width: 50%;
-  text-align: center;
-  line-height: 1.5em;
-  font-weight: bold;
-  color: var(--dark);
-  background-color: var(--yellow);
-  display: inline-block;
-  transition: 0.5s;
+    position: absolute;
+    left: 25%;
+    bottom: 5em;
+    width: 50%;
+    text-align: center;
+    line-height: 1.5em;
+    font-weight: bold;
+    color: var(--dark);
+    background-color: var(--yellow);
+    display: inline-block;
+    transition: 0.5s;
 }
 
 .player-name {
-  font-family: "Titillium Web", sans-serif;
-  font-size: 1.4em;
-  padding: 0.8rem 1rem;
-  display: inline-block;
+    font-family: "Titillium Web", sans-serif;
+    font-size: 1.4em;
+    padding: 0.8rem 1rem;
+    display: inline-block;
 }
 .playercontainer:hover .player-name-cont {
-  bottom: -100%;
+    bottom: -100%;
 }
 
 .fa-stack .fa {
-  color: black;
+    color: black;
 }
 .fa-stack .fa.fa-circle {
-  color: white;
+    color: white;
 }
 
 .fa-stack:hover .fa.fa-circle {
-  color: var(--yellow);
+    color: var(--yellow);
 }
 
 @media (min-width: 768px) {
-  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
-  .playercontainer {
-    width: 30%;
-    margin: 1em 0.5em;
-  }
-  .player-name-cont {
-    bottom: 8em;
-  }
-  .ELbody p{
-    margin-top: 2%;
-    margin-bottom: .8%;
-  }
+    /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+    .playercontainer {
+        width: 29%;
+        margin: 1em 1.2em;
+    }
+    .player-name-cont {
+        bottom: 8em;
+    }
+    .ELbody p {
+        margin-top: 2%;
+        margin-bottom: 0.8%;
+    }
+}
+
+@media (min-width: 1025px) {
+    /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+    .playercontainer {
+        width: 30%;
+        margin: 1em 1em;
+    }
+    .player-name-cont {
+        bottom: 8em;
+    }
+    .ELbody p {
+        margin-top: 2%;
+        margin-bottom: 0.8%;
+    }
 }
 
 #ourGames {
-  margin: 2rem;
+    max-width: 1140px;
+    margin: 2rem;
 }
 #ourGames .container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 #ourGames h1 {
-  font-family: "Titillium Web", sans-serif;
-  font-weight: 900;
-  font-size: 40px;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 900;
+    font-size: 3.5rem;
 }
 #ourGames span {
-  color: var(--yellow);
+    color: var(--yellow);
 }
 #ourGames p {
-  color: var(--lightgrey);
-  font-family: "Poppins", sans-serif;
-  margin-bottom: 1.3rem;
+    color: var(--lightgrey);
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 1.3rem;
 }
 
 #ourGames .card {
-  width: 100%;
-  height: 100%;
-  margin: 2rem 0;
+    width: 100%;
+    height: 100%;
+    margin: 2rem 2rem;
 }
 #ourGames img {
-  width: 100%;
-  height: 80%;
+    width: 100%;
+    height: 80%;
 }
 #ourGames .card-text h1:hover {
-  color: var(--yellow);
-  text-decoration: none;
+    color: var(--yellow);
+    text-decoration: none;
 }
 #ourGames a {
-  color: var(--lightgrey);
-  text-decoration: none;
+    color: var(--lightgrey);
+    text-decoration: none;
 }
 #ourGames a:hover {
-  color: var(--yellow);
-  text-decoration: none;
+    color: var(--yellow);
+    text-decoration: none;
 }
 #ourGames .card-text p {
-  margin-top: 1.3rem;
+    margin-top: 1.3rem;
 }
 #ourGames .card-text {
-  border: 1px solid white;
-  margin-top: -3px;
-  /* border-top: 1px solid white; */
-  box-shadow: 0px 1px 6px 1px rgba(111, 115, 111, 0.5);
-  -webkit-box-shadow: 0px 1px 6px 1px rgba(111, 115, 111, 0.5);
-  -moz-box-shadow: 0px 1px 6px 1px rgba(111, 115, 111, 0.5);
-  padding: 0 1rem;
+    border: 1px solid white;
+    margin-top: -3px;
+    /* border-top: 1px solid white; */
+    box-shadow: 0px 1px 6px 1px rgba(111, 115, 111, 0.5);
+    -webkit-box-shadow: 0px 1px 6px 1px rgba(111, 115, 111, 0.5);
+    -moz-box-shadow: 0px 1px 6px 1px rgba(111, 115, 111, 0.5);
+    padding: 0 1rem;
 }
 #ourGames .card-text h1 {
-  font-size: 25px;
+    font-size: 25px;
 }
 /* Modal Login */
 .modal {
-  background-color: white;
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity .3s;
-  --transform:translateY(-100vh);
-  --transition: transform .5s;
-  margin-top: -1.2rem ;
-
+    background-color: white;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+    --transform: translateY(-100vh);
+    --transition: transform 0.5s;
+    margin-top: -1.2rem;
 }
-.modal-show{
-opacity: 1;
-pointer-events: unset;
-transition: opacity .3s;
---transform: translateY(0);
---transition: transform .5s;
+.modal-show {
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity 0.3s;
+    --transform: translateY(0);
+    --transition: transform 0.5s;
 }
-.modal .modal-container{
-  transform: var(--transform);
-  transition: transform .3s;
-  transition: var(--transition);
-  font-family: "Poppins", sans-serif;
-  /* margin-left: 25%; */
+.modal .modal-container {
+    transform: var(--transform);
+    transition: transform 0.3s;
+    transition: var(--transition);
+    font-family: "Poppins", sans-serif;
+    /* margin-left: 25%; */
 }
-.modal .modal-close{
-  background-color: black;
-  color: white;
-  width: 40px;
-  height: 40px;
-  font-family: "Titillium Web", sans-serif; 
-  font-weight: 900;
-  font-size: 18px;
-  float: right;
-  
-
+.modal .modal-close {
+    background-color: black;
+    color: white;
+    width: 40px;
+    height: 40px;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    float: right;
 }
-.modal .modal-title{
-  font-family: "Titillium Web", sans-serif; 
-  font-weight: 900;
-  font-size: 40px;
-  text-align: center;
-  margin-top: 4rem;
-  margin-bottom: 2rem;
+.modal .modal-title {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
 }
-.modal .modal-userName, .modal .modal-password {
-width: 80%;
-height: 2.5rem;
-border: 1px solid var(--lightgrey);
-margin: .2rem  1.4rem 1rem 2.5rem;
-padding: 1rem;
-color: var(--lightgrey);
+.modal .modal-userName,
+.modal .modal-password {
+    width: 80%;
+    height: 2.5rem;
+    border: 1px solid var(--lightgrey);
+    margin: 0.2rem 1.4rem 1rem 2.5rem;
+    padding: 1rem;
+    color: var(--lightgrey);
 }
-.modal .modal-remember{
-  border: 1px solid var(--lightgrey);
-  margin: .2rem  1.4rem 1rem 2.5rem;
-  color: var(--lightgrey);
+.modal .modal-remember {
+    border: 1px solid var(--lightgrey);
+    margin: 0.2rem 1.4rem 1rem 2.5rem;
+    color: var(--lightgrey);
 }
-.modal .modal-signIn{
-  width: 6rem;
-  height: 3rem;
-  margin: .2rem  1.4rem 1rem 2.5rem;
-  color: white;
-  background-color: var(--yellow);
+.modal .modal-signIn {
+    width: 6rem;
+    height: 3rem;
+    margin: 0.2rem 1.4rem 1rem 2.5rem;
+    color: white;
+    background-color: var(--yellow);
 }
-.modal .modal-lost{
-  text-decoration: none;
-  margin: .2rem  0 1rem 2.5rem;
-color: var(--dark);
+.modal .modal-lost {
+    text-decoration: none;
+    margin: 0.2rem 0 1rem 2.5rem;
+    color: var(--dark);
 }
-.modal .modal-create{
-  text-decoration: none;
-  margin: .2rem  0 1rem 4.5rem;
-color: var(--lightgrey);
-font-family: "Poppins", sans-serif;
+.modal .modal-create {
+    text-decoration: none;
+    margin: 0.2rem 0 1rem 4.5rem;
+    color: var(--lightgrey);
+    font-family: "Poppins", sans-serif;
 }
 
 /* Modal SignUp */
 .modalSU {
-  background-color: white;
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s;
-  --transform: translateY(-100vh);
-  --transition: transform 0.5s;
-  margin-top: -1.2rem;
+    background-color: white;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+    --transform: translateY(-100vh);
+    --transition: transform 0.5s;
+    margin-top: -1.2rem;
 }
 .modalSU-show {
-  opacity: 1;
-  pointer-events: unset;
-  transition: opacity 0.3s;
-  --transform: translateY(0);
-  --transition: transform 0.5s;
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity 0.3s;
+    --transform: translateY(0);
+    --transition: transform 0.5s;
 }
 .modalSU .modalSU-container {
-  transform: var(--transform);
-  transition: transform 0.3s;
-  transition: var(--transition);
-  font-family: "Poppins", sans-serif;
-  text-align: center;
+    transform: var(--transform);
+    transition: transform 0.3s;
+    transition: var(--transition);
+    font-family: "Poppins", sans-serif;
+    text-align: center;
 }
 .modalSU .modalSU-close {
-  background-color: black;
-  color: white;
-  width: 40px;
-  height: 40px;
-  font-family: "Titillium Web", sans-serif;
-  font-weight: 900;
-  font-size: 18px;
-  float: right;
+    background-color: black;
+    color: white;
+    width: 40px;
+    height: 40px;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    float: right;
 }
 .modalSU .modalSU-title {
-  font-family: "Titillium Web", sans-serif;
-  font-weight: 900;
-  font-size: 40px;
-  text-align: center;
-  margin-top: 4rem;
-  margin-bottom: 2rem;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
 }
 
 /* Breakpoints */
 
 @media (min-width: 768px) {
-  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
-  #ourGames .card {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-around;
-    width: 30%;
-    height: 100%;
-  }
-  #ourGames img {
-    width: 100%;
-    height: 100%;
-  }
-  #ourGames .card-text {
-    width: 100%;
-    height: 100%;
-    margin-top: -1px;
-  }
-  #ourGames .card-text h1 {
-    font-size: 20px;
-  }
-  .dissable{
-    opacity: 0;
-  }
-/* Modal Login */
-.modal .modal-container{
-  margin-left: 15%;
-  margin-top: 10%;
-}
-.modal .modal-close{
-  width: 50px;
-  height: 50px;
-  font-size: 20px;
-}
-.modal .modal-title{
-  font-size: 50px;
-  margin-top: 8rem;
-  margin-right: 15%;
-}
-.modal .modal-userName, .modal .modal-password{
-  width: 34rem;
-height: 4rem;
-margin: .5rem  3rem 1.5rem 2.5rem;
-padding: 1rem;
-}
-.modal .modal-create{
-  margin: .2rem  0 1rem 16rem;
-}
+    /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+    #ourGames .card {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        width: 30%;
+        height: 100%;
+    }
+    #ourGames img {
+        width: 100%;
+        height: 100%;
+    }
+    #ourGames .card-text {
+        width: 100%;
+        height: 100%;
+        margin-top: -1px;
+    }
+    #ourGames .card-text h1 {
+        font-size: 20px;
+    }
+    .dissable {
+        opacity: 0;
+    }
+    /* Modal Login */
+    .modal .modal-container {
+        margin-left: 15%;
+        margin-top: 10%;
+    }
+    .modal .modal-close {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+    .modal .modal-title {
+        font-size: 50px;
+        margin-top: 8rem;
+        margin-right: 15%;
+    }
+    .modal .modal-userName,
+    .modal .modal-password {
+        width: 34rem;
+        height: 4rem;
+        margin: 0.5rem 3rem 1.5rem 2.5rem;
+        padding: 1rem;
+    }
+    .modal .modal-create {
+        margin: 0.2rem 0 1rem 16rem;
+    }
 
-/* Modal SignUp */
-.modalSU .modalSU-container {
-  margin-top: 10%;
-}
-.modalSU .modalSU-close {
-  width: 50px;
-  height: 50px;
-  font-size: 20px;
-}
-.modalSU .modalSU-title {
-  font-size: 50px;
-}
-
+    /* Modal SignUp */
+    .modalSU .modalSU-container {
+        margin-top: 10%;
+    }
+    .modalSU .modalSU-close {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+    .modalSU .modalSU-title {
+        font-size: 50px;
+    }
 }
 @media (min-width: 1025px) {
-  /* big landscape tablets, laptops, and desktops */
-  #ourGames {
-    max-width: 1140px;
-    margin: 0 25%;
-  }
-  #ourGames h1{
-font-size: 30px;
-  }
-  #ourGames p{
+    /* big landscape tablets, laptops, and desktops */
+    #ourGames {
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+    #ourGames h1 {
+        font-size: 3.5rem;
+    }
+    /* #ourGames p{
 font-size: 12px;
-  }
-  #ourGames .card {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-around;
-    width: 30%;
-    height: 100%;
-  }
-  #ourGames img {
-    width: 100%;
-    height: 100%;
-  }
-  #ourGames .card-text {
-    width: 100%;
-    height: 100%;
-    margin-top: -1px;
-  }
-  #ourGames .card-text h1 {
-    font-size: 20px;
-  }
-  #ourGames .card-text i {
-    font-size: 10px;
-  }
-  #ourGames .card-text a {
-    font-size: 10px;
-  }
-/* Modal Login */
-.modal .modal-container{
-  margin-left: 30%;
-  margin-top: 10%;
-}
-.modal .modal-close{
-  width: 60px;
-  height: 60px;
-  font-size: 22px;
-}
-.modal .modal-title{
-  font-size: 60px;
-  margin-top: 8rem;
-  margin-right: 40%;
-}
-.modal .modal-userName, .modal .modal-password{
-  width: 50%;
-height: 4rem;
-margin: .5rem  3rem 1.5rem 2.5rem;
-padding: 1rem;
-}
-.modal .modal-create{
-  margin: .2rem  0 1rem 14.5rem;
-}
-/* Modal SignUp */
-.modalSU .modalSU-container {
-  margin-top: 10%;
-}
-.modalSU .modalSU-close {
-  width: 60px;
-  height: 60px;
-  font-size: 22px;
-}
-.modalSU .modalSU-title {
-  font-size: 60px;
-}
+  } */
+    #ourGames .card {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        width: 30%;
+        height: 100%;
+        margin: 1em 1em;
+    }
+    #ourGames img {
+        width: 100%;
+        height: 100%;
+    }
+    #ourGames .card-text {
+        width: 100%;
+        height: 100%;
+        margin-top: -1px;
+    }
+    #ourGames .card-text h1 {
+        font-size: 20px;
+    }
+    #ourGames .card-text i {
+        font-size: 10px;
+    }
+    #ourGames .card-text a {
+        font-size: 10px;
+    }
+    /* Modal Login */
+    .modal .modal-container {
+        margin-left: 30%;
+        margin-top: 10%;
+    }
+    .modal .modal-close {
+        width: 60px;
+        height: 60px;
+        font-size: 22px;
+    }
+    .modal .modal-title {
+        font-size: 60px;
+        margin-top: 8rem;
+        margin-right: 40%;
+    }
+    .modal .modal-userName,
+    .modal .modal-password {
+        width: 50%;
+        height: 4rem;
+        margin: 0.5rem 3rem 1.5rem 2.5rem;
+        padding: 1rem;
+    }
+    .modal .modal-create {
+        margin: 0.2rem 0 1rem 14.5rem;
+    }
+    /* Modal SignUp */
+    .modalSU .modalSU-container {
+        margin-top: 10%;
+    }
+    .modalSU .modalSU-close {
+        width: 60px;
+        height: 60px;
+        font-size: 22px;
+    }
+    .modalSU .modalSU-title {
+        font-size: 60px;
+    }
 }
 
 /*  FOOTER  */
@@ -485,7 +500,7 @@ padding: 1rem;
     width: 100%;
     padding: 7px 0px;
     color: white;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: "Titillium Web", sans-serif;
     position: relative;
     margin-top: auto;
 }
@@ -499,7 +514,7 @@ padding: 1rem;
 }
 
 .footer-last {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -516,14 +531,13 @@ padding: 1rem;
     color: white;
 }
 
-
-@media (min-width:768px) {
+@media (min-width: 768px) {
     /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones  */
-     .footer-h2 {
+    .footer-h2 {
         font-size: 1.4rem;
     }
 
     .footer-last {
-        font-size: .8rem;
+        font-size: 0.8rem;
     }
 }
