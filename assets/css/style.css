@@ -163,12 +163,15 @@
 
 #ourGames {
     max-width: 1140px;
-    margin: 2rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1em;
 }
 #ourGames .container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    flex-basis:33.3%;
 }
 #ourGames h1 {
     font-family: "Titillium Web", sans-serif;
@@ -187,7 +190,7 @@
 #ourGames .card {
     width: 100%;
     height: 100%;
-    margin: 2rem 2rem;
+    margin: 1em;
 }
 #ourGames img {
     width: 100%;
@@ -352,7 +355,7 @@
         display: flex;
         flex-wrap: wrap;
         align-content: center;
-        width: 30%;
+        width: 29%;
         height: 100%;
     }
     #ourGames img {
@@ -411,16 +414,9 @@
 }
 @media (min-width: 1025px) {
     /* big landscape tablets, laptops, and desktops */
-    #ourGames {
-        max-width: 1140px;
-        margin: 0 auto;
-    }
     #ourGames h1 {
         font-size: 3.5rem;
     }
-    /* #ourGames p{
-font-size: 12px;
-  } */
     #ourGames .card {
         display: flex;
         flex-wrap: wrap;
