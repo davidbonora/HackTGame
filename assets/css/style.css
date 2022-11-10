@@ -1,14 +1,13 @@
 :root {
   box-sizing: border-box;
   font-size: 0.875rem;
-  font-family: "Rubik", sans-serif;
   --blue: #0d6efd;
   --indigo: #6610f2;
   --purple: #6f42c1;
   --pink: #d63384;
   --red: #dc3545;
   --orange: #fd7e14;
-  --yellow: #ffc107;
+  --yellow: #ffc311;
   --green: #198754;
   --teal: #20c997;
   --cyan: #0dcaf0;
@@ -24,6 +23,130 @@
   box-sizing: inherit;
   outline: 0 none;
 }
+
+.ELbody {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1em;
+  padding-bottom: 12%;
+}
+.ELbody h1 {
+  font-family: "Titillium Web", sans-serif;
+  margin: 0;
+  font-size: 3.5rem;
+}
+.ELbody h1:nth-child(2) {
+  color: var(--yellow);
+  margin-top: -0.5em;
+  margin-bottom: -0.3em;
+}
+.ELbody p {
+  font-family: "Poppins", sans-serif;
+  color: var(--lightgrey);
+  font-size: 1.3rem;
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
+#our-team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 1em;
+}
+
+.playercontainer {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  margin-bottom: 10%;
+  box-shadow: 0px 13px 27px -5px rgba(50, 50, 93, 0.25),
+    0px 8px 16px -8px rgba(0, 0, 0, 0.3);
+}
+
+ .player-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.player-anim {
+  position: absolute;
+  bottom: 100%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  height: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: 0.5s ease;
+}
+
+.player-btn {
+  position: absolute;
+  top: 50%;
+  width: 50%;
+  left: 25%;
+  z-index: 1;
+  text-align: center;
+  transition: 0.5s;
+}
+.playercontainer:hover .player-anim {
+  height: 100%;
+  bottom: 0;
+}
+.player-name-cont {
+  position: absolute;
+  left: 25%;
+  bottom: 5em;
+  width: 50%;
+  text-align: center;
+  line-height: 1.5em;
+  font-weight: bold;
+  color: var(--dark);
+  background-color: var(--yellow);
+  display: inline-block;
+  transition: 0.5s;
+}
+
+.player-name {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 1.4em;
+  padding: 0.8rem 1rem;
+  display: inline-block;
+}
+.playercontainer:hover .player-name-cont {
+  bottom: -100%;
+}
+
+.fa-stack .fa {
+  color: black;
+}
+.fa-stack .fa.fa-circle {
+  color: white;
+}
+
+.fa-stack:hover .fa.fa-circle {
+  color: var(--yellow);
+}
+
+@media (min-width: 768px) {
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+  .playercontainer {
+    width: 30%;
+    margin: 1em 0.5em;
+  }
+  .player-name-cont {
+    bottom: 8em;
+  }
+  .ELbody p{
+    margin-top: 2%;
+    margin-bottom: .8%;
+  }
+}
+
 #ourGames {
   margin: 2rem;
 }
@@ -120,6 +243,7 @@ transition: opacity .3s;
   font-size: 18px;
   float: right;
   
+
 }
 .modal .modal-title{
   font-family: "Titillium Web", sans-serif; 
@@ -275,7 +399,7 @@ padding: 1rem;
 @media (min-width: 1025px) {
   /* big landscape tablets, laptops, and desktops */
   #ourGames {
-    max-width: 1440px;
+    max-width: 1140px;
     margin: 0 25%;
   }
   #ourGames h1{
