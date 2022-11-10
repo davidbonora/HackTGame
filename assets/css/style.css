@@ -28,21 +28,72 @@
 /*-- Principio David --*/
 
 #our-team {
-    width: 100vw;
-    display: flex;
-    margin: 2em 2em auto;
+  display: flexbox;
+  justify-content: center;
+  width: 100vw;
 }
 
-#our-team img.player-img {
-    display: block;
-    position: relative;
-    max-width: 80%;
+.container {
+  display: flex;
+  flex-flow: column;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 500px;
+  color: #fff;
+  margin: 1em 2em;
 }
 
-.player-btn { 
-    position: absolute;
-    align-items: center;
-    background-color: transparent;
+.player-img {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.player-img {
+  display: block;
+  position: absolute;
+  z-index: 0;
+}
+
+.img-gradient {
+  position: relative;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0.56) 100%);
+}
+
+.player-anim {
+  margin-top: auto;  /* pushes all content to bottom */
+  position: relative;
+  transition: 0.5s;
+  transform: translateY(-500%);
+}
+
+.player-btn {
+  position: relative;
+  transition: 0.5s;
+  opacity: 0;
+  margin-left: 37%;
+  background-color: transparent;
+  z-index: 1;
+}
+
+.player-name-cont {
+  width: 60%;
+  padding: 10px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  position: relative;
+  transition: 0.5s;
+  z-index: 1;
+  background-color: var(--yellow);
+}
+
+.player-name {
+  font-family: 'Titillium Web', sans-serif;
+  padding: auto;
+  font-size: 1.5em;
 }
 
 .fa-stack .fa {
@@ -56,31 +107,42 @@
     color: var(--yellow);
 }
 
-.player-name {
-    z-index: 2;
-    position: absolute;
+/* ANIMATE */
+
+.container:hover .player-anim {
+  transform: translateY(-300%);
 }
 
-.hide-hvr {
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s 9999s, opacity 0.1s ease-in-out;
+.container:hover .player-name-cont {
+  transform: translateY(200%);
 }
 
-.show-hvr {
-    visibility: visible;
-    opacity: 1;
-    transition: visibility 0s 9999s, opacity 0.1s ease-in-out;
+.container:hover .player-img {
+  filter: grayscale();
+  transition: 0.5s;
+}
+
+.container:hover .player-btn {
+  opacity: 1;
 }
 
 /*-- Final David --*/
 
 @media (min-width: 320px) {
     /* smartphones, iPhone, portrait 480x320 phones */
+    #our-team {
+        display: flexbox;
+    }
 }
 @media (min-width: 641px) {
     /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+    #our-team {
+        display: flex;
+    }
 }
 @media (min-width: 1025px) {
     /* big landscape tablets, laptops, and desktops */
+    #our-team {
+        display: flex;
+    }
 }
