@@ -25,37 +25,16 @@ root {
     outline: 0 none;
 }
 
-@media (min-width:320px) {
-    font-size: ;
-    /*smartphones, iPhone, portrait 480x320 phones */
-}
-
-@media (min-width:641px) {
-    font-size: ;
-    /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones  */
-}
-
-@media (min-width:1025px) {
-    font-size: ;
-    /*big landscape tablets, laptops, and desktops */
-}
-
-@media (min-width: 1440px) {
-    font-size: ;
-}
-
 .footerpie-pag {
     width: 100%;
     background-color: #292a2b;
     flex-direction: column;
     position: absolute;
     bottom: 0;
-
 }
 
-.footerdiv {
+.footer-div {
     width: 100%;
-    max-width: 1440px;
     padding: 7px 0px;
     color: white;
     font-family: 'Titillium Web', sans-serif;
@@ -63,21 +42,22 @@ root {
     margin-top: auto;
 }
 
-.footerlast {
+.footer-h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 1rem;
+}
+
+.footer-last {
     font-family: 'Poppins', sans-serif;
     justify-content: center;
     align-items: center;
     display: flex;
     justify-content: center;
     position: relative;
-
-}
-
-.footerh2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+    font-size: 0.7rem;
 }
 
 .yll {
@@ -87,3 +67,16 @@ root {
 .wht {
     color: white;
 }
+
+
+@media (min-width:641px) {
+    /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones  */
+     .footer-h2 {
+        font-size: 1.4rem;
+    }
+
+    .footer-last {
+        font-size: .8rem;
+    }
+}
+
