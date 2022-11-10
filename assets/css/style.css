@@ -1,35 +1,359 @@
 :root {
-    box-sizing: border-box;
-    font-size: 0.875rem;
-    font-family: "Rubik", sans-serif;
-    --blue: #0d6efd;
-    --indigo: #6610f2;
-    --purple: #6f42c1;
-    --pink: #d63384;
-    --red: #dc3545;
-    --orange: #fd7e14;
-    --yellow: #ffc107;
-    --green: #198754;
-    --teal: #20c997;
-    --cyan: #0dcaf0;
-    --dark: #292a2b;
+  box-sizing: border-box;
+  font-size: 0.875rem;
+  font-family: "Rubik", sans-serif;
+  --blue: #0d6efd;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #d63384;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #198754;
+  --teal: #20c997;
+  --cyan: #0dcaf0;
+  --dark: #292a2b;
+  --lightgrey: #736f73;
 }
-
 *,
 ::before,
 ::after {
-    padding: 0;
-    margin: 0;
-    border: 0;
-    box-sizing: inherit;
-    outline: 0 none;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: inherit;
+  outline: 0 none;
 }
+#ourGames {
+  margin: 2rem;
+}
+#ourGames .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#ourGames h1 {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+}
+#ourGames span {
+  color: var(--yellow);
+}
+#ourGames p {
+  color: var(--lightgrey);
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 1.3rem;
+}
+
+#ourGames .card {
+  width: 100%;
+  height: 100%;
+  margin: 2rem 0;
+}
+#ourGames img {
+  width: 100%;
+  height: 80%;
+}
+#ourGames .card-text h1:hover {
+  color: var(--yellow);
+  text-decoration: none;
+}
+#ourGames a {
+  color: var(--lightgrey);
+  text-decoration: none;
+}
+#ourGames a:hover {
+  color: var(--yellow);
+  text-decoration: none;
+}
+#ourGames .card-text p {
+  margin-top: 1.3rem;
+}
+#ourGames .card-text {
+  border: 1px solid white;
+  margin-top: -3px;
+  /* border-top: 1px solid white; */
+  box-shadow: 0px 1px 6px 1px rgba(111, 115, 111, 0.5);
+  -webkit-box-shadow: 0px 1px 6px 1px rgba(111, 115, 111, 0.5);
+  -moz-box-shadow: 0px 1px 6px 1px rgba(111, 115, 111, 0.5);
+  padding: 0 1rem;
+}
+#ourGames .card-text h1 {
+  font-size: 25px;
+}
+/* Modal Login */
+.modal {
+  background-color: white;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .3s;
+  --transform:translateY(-100vh);
+  --transition: transform .5s;
+  margin-top: -1.2rem ;
+
+}
+.modal-show{
+opacity: 1;
+pointer-events: unset;
+transition: opacity .3s;
+--transform: translateY(0);
+--transition: transform .5s;
+}
+.modal .modal-container{
+  transform: var(--transform);
+  transition: transform .3s;
+  transition: var(--transition);
+  font-family: "Poppins", sans-serif;
+  /* margin-left: 25%; */
+}
+.modal .modal-close{
+  background-color: black;
+  color: white;
+  width: 40px;
+  height: 40px;
+  font-family: "Titillium Web", sans-serif; 
+  font-weight: 900;
+  font-size: 18px;
+  float: right;
+  
+}
+.modal .modal-title{
+  font-family: "Titillium Web", sans-serif; 
+  font-weight: 900;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+.modal .modal-userName, .modal .modal-password {
+width: 80%;
+height: 2.5rem;
+border: 1px solid var(--lightgrey);
+margin: .2rem  1.4rem 1rem 2.5rem;
+padding: 1rem;
+color: var(--lightgrey);
+}
+.modal .modal-remember{
+  border: 1px solid var(--lightgrey);
+  margin: .2rem  1.4rem 1rem 2.5rem;
+  color: var(--lightgrey);
+}
+.modal .modal-signIn{
+  width: 6rem;
+  height: 3rem;
+  margin: .2rem  1.4rem 1rem 2.5rem;
+  color: white;
+  background-color: var(--yellow);
+}
+.modal .modal-lost{
+  text-decoration: none;
+  margin: .2rem  0 1rem 2.5rem;
+color: var(--dark);
+}
+.modal .modal-create{
+  text-decoration: none;
+  margin: .2rem  0 1rem 4.5rem;
+color: var(--lightgrey);
+font-family: "Poppins", sans-serif;
+}
+
+/* Modal SignUp */
+.modalSU {
+  background-color: white;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+  --transform: translateY(-100vh);
+  --transition: transform 0.5s;
+  margin-top: -1.2rem;
+}
+.modalSU-show {
+  opacity: 1;
+  pointer-events: unset;
+  transition: opacity 0.3s;
+  --transform: translateY(0);
+  --transition: transform 0.5s;
+}
+.modalSU .modalSU-container {
+  transform: var(--transform);
+  transition: transform 0.3s;
+  transition: var(--transition);
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+.modalSU .modalSU-close {
+  background-color: black;
+  color: white;
+  width: 40px;
+  height: 40px;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+  float: right;
+}
+.modalSU .modalSU-title {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+/* Breakpoints */
+
+@media (min-width: 768px) {
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+  #ourGames .card {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    width: 30%;
+    height: 100%;
+  }
+  #ourGames img {
+    width: 100%;
+    height: 100%;
+  }
+  #ourGames .card-text {
+    width: 100%;
+    height: 100%;
+    margin-top: -1px;
+  }
+  #ourGames .card-text h1 {
+    font-size: 20px;
+  }
+  .dissable{
+    opacity: 0;
+  }
+/* Modal Login */
+.modal .modal-container{
+  margin-left: 15%;
+  margin-top: 10%;
+}
+.modal .modal-close{
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+}
+.modal .modal-title{
+  font-size: 50px;
+  margin-top: 8rem;
+  margin-right: 15%;
+}
+.modal .modal-userName, .modal .modal-password{
+  width: 34rem;
+height: 4rem;
+margin: .5rem  3rem 1.5rem 2.5rem;
+padding: 1rem;
+}
+.modal .modal-create{
+  margin: .2rem  0 1rem 16rem;
+}
+
+/* Modal SignUp */
+.modalSU .modalSU-container {
+  margin-top: 10%;
+}
+.modalSU .modalSU-close {
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+}
+.modalSU .modalSU-title {
+  font-size: 50px;
+}
+
+}
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+  #ourGames {
+    max-width: 1440px;
+    margin: 0 25%;
+  }
+  #ourGames h1{
+font-size: 30px;
+  }
+  #ourGames p{
+font-size: 12px;
+  }
+  #ourGames .card {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    width: 30%;
+    height: 100%;
+  }
+  #ourGames img {
+    width: 100%;
+    height: 100%;
+  }
+  #ourGames .card-text {
+    width: 100%;
+    height: 100%;
+    margin-top: -1px;
+  }
+  #ourGames .card-text h1 {
+    font-size: 20px;
+  }
+  #ourGames .card-text i {
+    font-size: 10px;
+  }
+  #ourGames .card-text a {
+    font-size: 10px;
+  }
+/* Modal Login */
+.modal .modal-container{
+  margin-left: 30%;
+  margin-top: 10%;
+}
+.modal .modal-close{
+  width: 60px;
+  height: 60px;
+  font-size: 22px;
+}
+.modal .modal-title{
+  font-size: 60px;
+  margin-top: 8rem;
+  margin-right: 40%;
+}
+.modal .modal-userName, .modal .modal-password{
+  width: 50%;
+height: 4rem;
+margin: .5rem  3rem 1.5rem 2.5rem;
+padding: 1rem;
+}
+.modal .modal-create{
+  margin: .2rem  0 1rem 14.5rem;
+}
+/* Modal SignUp */
+.modalSU .modalSU-container {
+  margin-top: 10%;
+}
+.modalSU .modalSU-close {
+  width: 60px;
+  height: 60px;
+  font-size: 22px;
+}
+.modalSU .modalSU-title {
+  font-size: 60px;
+}
+}
+
+/*  FOOTER  */
 
 .footerpie-pag {
     width: 100%;
     background-color: #292a2b;
     flex-direction: column;
-    position: absolute;
+    position: relative;
     bottom: 0;
 }
 

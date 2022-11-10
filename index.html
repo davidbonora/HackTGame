@@ -4,8 +4,8 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="preconnect" href="https://fonts.googleapis.com/" />
-        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
             href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&family=Titillium+Web:wght@900&display=swap"
             rel="stylesheet"
@@ -15,11 +15,173 @@
             crossorigin="anonymous"
         ></script>
         <link rel="stylesheet" href="assets/css/style.css" />
-        <script src="assets/js/app.js"></script>
         <title>HackTGame</title>
     </head>
-
     <body>
+        <!-- Modal Login -->
+        <section class="modal">
+            <button class="modal-close">X</button>
+            <div class="modal-container">
+                <h1 class="modal-title">LOGIN</h1>
+                <form class="modal-form" action="" method="">
+                    <input
+                        class="modal-userName"
+                        id="userName"
+                        type="text"
+                        placeholder="Username"
+                    />
+                    <input
+                        class="modal-password"
+                        id="password"
+                        type="password"
+                        placeholder="Password"
+                    /><br />
+                    <input
+                        class="modal-remember"
+                        id="remember"
+                        type="checkbox"
+                    />
+                    Remember Me <br />
+                    <input
+                        class="modal-signIn"
+                        id="signIn"
+                        type="submit"
+                        value="SIGN IN"
+                    />
+                </form>
+                <a href="#" class="modal-lost">Lost Password?</a>
+                <a href="#" class="modal-create">Create an Account</a>
+            </div>
+        </section>
+        <!-- Fin Modal Login -->
+
+        <!-- Modal SignUp -->
+        <section class="modal">
+            <button class="modal-close">X</button>
+            <div class="modal-container">
+                <h1 class="modal-title">SIGN UP</h1>
+                <p>New membership are not allowed.</p>
+            </div>
+        </section>
+        <!-- Fin SignUp -->
+
+        <section id="ourGames">
+            <h1>Our <span>Games</span></h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis exercitationem molestias maxime architecto.
+                Repellendus fugit tempora libero quisquam unde dicta repellat
+                distinctio architecto perferendis deserunt, commodi consequuntur
+                incidunt deleniti a soluta, porro quasi voluptate eum modi.
+                Reprehenderit enim in delectus!
+            </p>
+            <div class="container">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="img/games/game-1.png" alt="game1" />
+                    </div>
+                    <div class="card-text">
+                        <h1>MEMORY CARDS</h1>
+                        <i class="fa-solid fa-display"></i>
+                        <a href="#">STEAM</a>
+                        <a href="#">XBOX ONE</a>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Est, eum?
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="img/games/game-2.jpg" alt="game2" />
+                    </div>
+                    <div class="card-text">
+                        <h1>SPACE INVADERS</h1>
+                        <i class="fa-solid fa-display"></i>
+                        <a href="#">ORIGIN</a>
+                        <a href="#">PLAY STATION 4</a>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Est, eum?
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img
+                            src="img/games/coming-soon.jpg"
+                            alt="comming soon"
+                        />
+                    </div>
+                    <div class="card-text">
+                        <h1>COMMING SOON</h1>
+                        <i class="fa-solid fa-display"></i>
+                        <a href="#">STEAM</a>
+                        <a href="#">UPLAY</a>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Est, eum?
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img
+                            src="img/games/coming-soon.jpg"
+                            alt="comming soon"
+                        />
+                    </div>
+                    <div class="card-text">
+                        <h1>COMMING SOON</h1>
+                        <i class="fa-solid fa-display"></i>
+                        <a href="#">STEAM</a>
+                        <a href="#">UPLAY</a>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Est, eum?
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img
+                            src="img/games/coming-soon.jpg"
+                            alt="comming soon"
+                        />
+                    </div>
+                    <div class="card-text">
+                        <h1>COMMING SOON</h1>
+                        <i class="fa-solid fa-display"></i>
+                        <a href="#">STEAM</a>
+                        <a href="#">UPLAY</a>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Est, eum?
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img
+                            src="img/games/coming-soon.jpg"
+                            alt="comming soon"
+                        />
+                    </div>
+                    <div class="card-text">
+                        <h1>COMMING SOON</h1>
+                        <i class="fa-solid fa-display"></i>
+                        <a href="#">STEAM</a>
+                        <a href="#">UPLAY</a>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Est, eum?
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="assets/js/app.js"></script>
         <footer class="footerpie-pag">
             <div class="footer-div">
                 <h2 class="footer-h2">
