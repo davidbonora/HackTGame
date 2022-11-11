@@ -144,7 +144,7 @@ header {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  background-image: url("../../Teamwork3/img/slider/1.jpg");
+  background-image: url("/img/gallery/fulls/img/slider/1.jpg");
 }
 #slider1 {
   position: relative;
