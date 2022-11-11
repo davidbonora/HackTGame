@@ -565,7 +565,7 @@
 
 div.slideshow-container img {
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
     object-fit: cover;
 }
 
@@ -616,7 +616,7 @@ div.slideshow-container img {
 @media (min-width: 768px) {
     /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
     .dotContainer {
-        width: 80%;
+        width: 70%;
     }
 }
 
@@ -803,7 +803,7 @@ body {
         font-size: 3.5rem;
     }
     .header-h2-p {
-        margin-top: 3rem;
+        margin-top: 15rem;
         width: 100%;
     }
     .header-p {
