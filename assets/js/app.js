@@ -64,3 +64,20 @@ closeModalSU.addEventListener("click", (e) => {
     modalSU.classList.remove("modalSU-show");
     contentViewSU.classList.remove("dissable");
 });
+
+//Modal Hamburguer
+const openModalH = document.querySelector(".hButton");
+const modalH = document.querySelector(".hMenuContainer");
+const closeModalH = document.querySelector(".buttonClose");
+const contentViewH = document.querySelector(".hButton");
+
+openModalH.addEventListener("click", (e) => {
+    e.preventDefault();
+    modalH.classList.add("hamburguerMenu-show");
+    contentViewH.classList.add("dissable");
+});
+closeModalH.addEventListener("click", (e) => {
+    e.preventDefault();
+    modalH.classList.remove("hamburguerMenu-show");
+    contentViewH.classList.remove("dissable");
+});
