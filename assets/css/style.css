@@ -821,6 +821,7 @@ body {
     /* 820 x 1180  */
     .header-div {
         height: 0rem;
+        z-index: 1;
     }
     .header-h1 {
         margin-top: 3rem;
