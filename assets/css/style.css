@@ -176,7 +176,7 @@
     flex-wrap: wrap;
     justify-content: center;
 }
-#ourGames h1 {
+#ourGames .ourG-title {
     font-family: "Titillium Web", sans-serif;
     font-weight: 900;
     font-size: 3.5rem;
@@ -185,7 +185,7 @@
 #ourGames span {
     color: var(--yellow);
 }
-#ourGames p {
+#ourGames .ourG-subt {
     color: var(--lightgrey);
     font-family: "Poppins", sans-serif;
     margin-bottom: 1.3rem;
@@ -196,6 +196,9 @@
     width: 100%;
     height: 100%;
     margin: 1em;
+    box-shadow: 0px 1px 6px 1px rgba(111, 115, 111, 0.5);
+    -webkit-box-shadow: 0px 1px 6px 1px rgba(111, 115, 111, 0.5);
+    -moz-box-shadow: 0px 1px 6px 1px rgba(111, 115, 111, 0.5);
 }
 #ourGames img {
     width: 100%;
@@ -215,20 +218,18 @@
 }
 #ourGames .card-text p {
     margin-top: 1.3rem;
+    color: var(--lightgrey);
+    font-family: "Poppins", sans-serif;
 }
 #ourGames .card-text a {
     font-family: "Poppins", sans-serif;
     margin-top: 1.5rem;
-    margin-left: 0.5rem;
 }
 #ourGames .card-text {
     border: 1px solid white;
     margin-top: -3px;
     /* border-top: 1px solid white; */
-    box-shadow: 0px 1px 6px 1px rgba(111, 115, 111, 0.5);
-    -webkit-box-shadow: 0px 1px 6px 1px rgba(111, 115, 111, 0.5);
-    -moz-box-shadow: 0px 1px 6px 1px rgba(111, 115, 111, 0.5);
-    padding: 0 1rem;
+    padding: 1em;
 }
 #ourGames .card-text h1 {
     font-size: 25px;
@@ -244,7 +245,6 @@
     transition: opacity 0.3s;
     --transform: translateY(-100vh);
     --transition: transform 0.5s;
-    margin-top: -1.2rem;
     z-index: 2;
 }
 .modal-show {
@@ -323,7 +323,6 @@
     transition: opacity 0.3s;
     --transform: translateY(-100vh);
     --transition: transform 0.5s;
-    margin-top: -1.2rem;
     z-index: 2;
 }
 .modalSU-show {
@@ -498,7 +497,7 @@
 
 .footerpie-pag {
     width: 100%;
-    background-color: #292a2b;
+    background-color: var(--darkHack);
     flex-direction: column;
     position: relative;
     bottom: 0;
@@ -506,7 +505,7 @@
 
 .footer-div {
     width: 100%;
-    padding: 7px 0px;
+    padding: 2em;
     color: white;
     font-family: "Titillium Web", sans-serif;
     position: relative;
@@ -518,7 +517,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 
 .footer-last {
@@ -528,7 +527,7 @@
     display: flex;
     justify-content: center;
     position: relative;
-    font-size: 0.7rem;
+    font-size: 1rem;
 }
 
 .yll {
@@ -615,8 +614,21 @@ div.slideshow-container img {
 
 @media (min-width: 768px) {
     /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+    div.slideshow-container img {
+        height: 94vh;
+    }
     .dotContainer {
         width: 70%;
+    }
+}
+
+@media (min-width: 1025px) {
+    /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+    div.slideshow-container img {
+        height: 100vh;
+    }
+    .dotContainer {
+        width: 80%;
     }
 }
 
@@ -630,10 +642,6 @@ body {
 body {
     font-family: "Poppins", sans-serif;
     font-family: "Titillium Web", sans-serif;
-    /* background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-image: url("/img/gallery/fulls/img/slider/1.jpg"); */
 }
 .header-div {
     position: absolute;
@@ -641,7 +649,7 @@ body {
     display: flex;
     width: 100%;
     top: 0;
-    /* height: 5rem; */
+    height: 5rem;
     background-color: #fffefa;
 }
 .header-h1 {
@@ -746,9 +754,9 @@ body {
     display: block;
     font-family: "Titillium Web", sans-serif;
     text-align: center;
-    margin-top: 20rem;
+    margin-top: 25rem;
     font-size: 3rem;
-    text-shadow: 3px 3px var(--darkHack);
+    text-shadow: 1px 1px var(--darkHack);
 }
 .header-white {
     color: var(--whiteTGame);
@@ -777,7 +785,7 @@ body {
 @media (min-width: 768px) {
     /* 768 x 1025 */
     .header-div {
-        height: 7rem;
+        height: 6rem;
         position: relative;
         display: flex;
         width: 100%;
@@ -785,14 +793,14 @@ body {
     .header-h1 {
         white-space: wrap;
         font-size: 1.8rem;
-        margin-top: 2rem;
+        margin-top: 1.5rem;
         margin-left: 2rem;
     }
     .header-menu-desktop {
         opacity: 0;
     }
     .header-button {
-        margin-top: 2rem;
+        margin-top: 1.5rem;
         margin-left: 34rem;
     }
     .buttonMenu {
@@ -803,7 +811,7 @@ body {
         font-size: 3.5rem;
     }
     .header-h2-p {
-        margin-top: 15rem;
+        margin-top: 8rem;
         width: 100%;
     }
     .header-p {
