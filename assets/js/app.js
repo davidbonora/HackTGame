@@ -33,7 +33,6 @@ function showSlides(n) {
 
 // Modal Login
 const openModal = document.querySelector(".loginButton");
-const openhModal = document.querySelector(".hloginButton");
 const modal = document.querySelector(".modal");
 const closeModal = document.querySelector(".modal-close");
 const contentView = document.querySelector(".divButton");
