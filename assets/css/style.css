@@ -60,7 +60,7 @@
 }
 
 .playercontainer {
-    width: 100%;
+    width: 92%;
     position: relative;
     overflow: hidden;
     color: #fff;
@@ -139,7 +139,7 @@
     /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
     .playercontainer {
         width: 29%;
-        margin: 1em 1.2em;
+        margin: 1em 1em;
     }
     .player-name-cont {
         bottom: 8em;
