@@ -48,7 +48,7 @@ for (const element of openModal) {
         modal.classList.remove("modal-show");
         contentView.classList.remove("dissable");
     });
-};
+}
 
 //Modal SignUp
 const openModalSU = document.querySelectorAll(".signUpButton");
@@ -69,8 +69,6 @@ for (const element of openModalSU) {
     });
 }
 
-
-
 //Modal Hamburguer
 const openModalH = document.querySelector(".hButton");
 const modalH = document.querySelector(".hMenuContainer");
@@ -88,21 +86,15 @@ closeModalH.addEventListener("click", (e) => {
     contentViewH.classList.remove("dissable");
 });
 
-// When the user scrolls the page, execute myFunction 
-window.onscroll = function() {myFunction()};
+// Header onScroll webview
+let lastScroll = window.scrollY;
+const header = document.querySelector(".header-div");
+const scrollChange = 10;
+const add_class_on_scroll = () => header.classList.add("sticky");
 
-// Get the header
-let header = document.getElementsByClassName("header-menu-desktop");
-
-// Get the offset position of the navbar
-let sticky = header.offsetTop;
-console.log(sticky);
-
-// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
+window.addEventListener("scroll", function () {
+    lastScroll = window.scrollY;
+    if (lastScroll >= scrollChange) {
+        add_class_on_scroll();
+    }
+});
