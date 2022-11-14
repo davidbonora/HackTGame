@@ -32,38 +32,44 @@ function showSlides(n) {
 }
 
 // Modal Login
-const openModal = document.querySelector(".loginButton");
+const openModal = document.querySelectorAll(".loginButton");
 const modal = document.querySelector(".modal");
 const closeModal = document.querySelector(".modal-close");
 const contentView = document.querySelector(".divButton");
 
-openModal.addEventListener("click", (e) => {
-    e.preventDefault();
-    modal.classList.add("modal-show");
-    contentView.classList.add("dissable");
-});
-closeModal.addEventListener("click", (e) => {
-    e.preventDefault();
-    modal.classList.remove("modal-show");
-    contentView.classList.remove("dissable");
-});
+for (const element of openModal) {
+    element.addEventListener("click", (e) => {
+        e.preventDefault();
+        modal.classList.add("modal-show");
+        contentView.classList.add("dissable");
+    });
+    closeModal.addEventListener("click", (e) => {
+        e.preventDefault();
+        modal.classList.remove("modal-show");
+        contentView.classList.remove("dissable");
+    });
+};
 
 //Modal SignUp
-const openModalSU = document.querySelector(".signUpButton");
+const openModalSU = document.querySelectorAll(".signUpButton");
 const modalSU = document.querySelector(".modalSU");
 const closeModalSU = document.querySelector(".modalSU-close");
 const contentViewSU = document.querySelector(".divButton");
 
-openModalSU.addEventListener("click", (e) => {
-    e.preventDefault();
-    modalSU.classList.add("modalSU-show");
-    contentViewSU.classList.add("dissable");
-});
-closeModalSU.addEventListener("click", (e) => {
-    e.preventDefault();
-    modalSU.classList.remove("modalSU-show");
-    contentViewSU.classList.remove("dissable");
-});
+for (const element of openModalSU) {
+    element.addEventListener("click", (e) => {
+        e.preventDefault();
+        modalSU.classList.add("modalSU-show");
+        contentViewSU.classList.add("dissable");
+    });
+    closeModalSU.addEventListener("click", (e) => {
+        e.preventDefault();
+        modalSU.classList.remove("modalSU-show");
+        contentViewSU.classList.remove("dissable");
+    });
+}
+
+
 
 //Modal Hamburguer
 const openModalH = document.querySelector(".hButton");
@@ -81,3 +87,22 @@ closeModalH.addEventListener("click", (e) => {
     modalH.classList.remove("hamburguerMenu-show");
     contentViewH.classList.remove("dissable");
 });
+
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+// Get the header
+let header = document.getElementsByClassName("header-menu-desktop");
+
+// Get the offset position of the navbar
+let sticky = header.offsetTop;
+console.log(sticky);
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
